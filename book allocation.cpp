@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool abs(int n, int m, int time[], int mid)
+bool ats(int n, int m, int time[], int mid)
 {
     int std=1;
     int sum=0;
@@ -36,7 +36,7 @@ long long book(int n, int m, int time[])
             int  mid=s+(e-s)/2;
      while(s<=e)
     {
-        if(abs( n, m, time, mid))
+        if(ats( n, m, time, mid))
         {
 			ans=mid;
             e=mid-1;
@@ -50,8 +50,7 @@ long long book(int n, int m, int time[])
 }
 int main()
 {
-	int n=3;
-	int m=5;
-	int arr[m]={1, 2, 2, 3, 1};
-	cout<<book(n,m,arr);
+	int n=4;
+	int arr[n]={10,20,10,30};
+	cout<<book(n,2,arr);
 }
