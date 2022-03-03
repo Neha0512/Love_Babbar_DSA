@@ -21,5 +21,9 @@ int selectSort(int arr[], int n)
  {
  	int n=5;
  	int arr[n]={6,8,5,10,3};
- 	cout<<selectSort(arr, n);
+ 	selectSort(arr, n);
+ 	for(int i=0; i<n; i++)
+ 	{
+ 		cout<<arr[i]<<" ";
+	 }
  }
