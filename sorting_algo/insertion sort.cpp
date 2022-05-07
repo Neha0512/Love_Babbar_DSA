@@ -1,3 +1,5 @@
+//algo is adaptable
+
 #include<bits/stdc++.h>
 using namespace std;
 void InsertSort(int arr[], int n)
@@ -8,7 +10,7 @@ void InsertSort(int arr[], int n)
 		int j=i-1;
 		for(;j>=0;j--)
 		{
-			if(arr[j]>arr[temp])
+			if(arr[j]>temp)
 			{
 				arr[j+1]=arr[j];
 			}
@@ -16,7 +18,7 @@ void InsertSort(int arr[], int n)
 				break;
 			}
 		}
-		arr[temp]=arr[j];
+		arr[j+1]=temp;
 	}
 		for(int i=0;i<n; i++)
 	{
